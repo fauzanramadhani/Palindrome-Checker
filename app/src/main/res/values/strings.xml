@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Palindrome Checker</string>
+    <string name="icon_add_user">Icon Add User</string>
+    <string name="name">Name</string>
+    <string name="palindrome">Palindrome</string>
+    <string name="check">Check</string>
+    <string name="next">Next</string>
+    <string name="button_to_next">Button to Next</string>
+    <string name="button_to_check">Button to Check</string>
+    <string name="choose_a_user">Choose a User</string>
+</resources>

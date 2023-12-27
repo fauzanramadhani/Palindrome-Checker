@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".feature.first.FirstScreen">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="32dp"
+            android:paddingEnd="33dp"
+            android:paddingVertical="48dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_photo"
+                android:layout_gravity="center"
+                android:contentDescription="@string/icon_add_user" />
+
+            <EditText
+                android:id="@+id/first_screen_ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:textColorHint="#4D535555"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="16sp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:autofillHints="Nm"
+                android:layout_marginTop="51dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/rounded_edit_text"/>
+            <EditText
+                android:id="@+id/first_screen_ed_palindrome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/palindrome"
+                android:textColorHint="#4D535555"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="16sp"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:autofillHints="Nm"
+                android:layout_marginTop="22.12dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/rounded_edit_text"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/first_screen_btn_check"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:text="@string/check"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14sp"
+                android:layout_marginTop="45dp"
+                android:contentDescription="@string/button_to_check"
+                android:background="@drawable/rounded_button"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/first_screen_btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14sp"
+                android:layout_marginTop="15dp"
+                android:contentDescription="@string/button_to_next"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
