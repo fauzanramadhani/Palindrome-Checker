@@ -16,4 +16,9 @@
     <string name="third_screen">Third Screen</string>
     <string name="firstname_lastname">Firstname Lastname</string>
     <string name="example_email">email@email.com</string>
+    <string name="true_palindrome">Wow, that is palindrome</string>
+    <string name="false_palindrome">Oh no, that is not palindrome</string>
+    <string name="close">Close</string>
+    <string name="empty_palindrome">Please input text to check</string>
+    <string name="empty_username">Username cannot be empty</string>
 </resources>

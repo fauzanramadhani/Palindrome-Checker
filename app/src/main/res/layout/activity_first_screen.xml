@@ -43,7 +43,7 @@
                 android:paddingEnd="16dp"
                 android:paddingTop="12dp"
                 android:paddingBottom="8dp"
-                android:background="@drawable/rounded_edit_text"/>
+                android:background="@drawable/rounded_12"/>
             <EditText
                 android:id="@+id/first_screen_ed_palindrome"
                 android:layout_width="match_parent"
@@ -60,7 +60,41 @@
                 android:paddingEnd="16dp"
                 android:paddingTop="12dp"
                 android:paddingBottom="8dp"
-                android:background="@drawable/rounded_edit_text"/>
+                android:background="@drawable/rounded_12"/>
+
+            <RelativeLayout
+                android:id="@+id/first_screen_result_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_12"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="8dp"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/first_screen_result_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#04021D"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="16sp"
+                    android:text=""
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/first_screen_result_close_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#2B637B"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="14sp"
+                    android:paddingTop="2dp"
+                    android:text="@string/close"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/first_screen_btn_check"
