@@ -38,7 +38,7 @@ class FirstScreen : AppCompatActivity() {
             val username = binding.firstScreenEdName.text.toString()
             if (username.isNotEmpty()) {
                 val intent = Intent(this, SecondScreen::class.java)
-                intent.putExtra(SecondScreen.EXTRAS.USERNAME, username)
+                intent.putExtra(SecondScreen.CONSTANT.USERNAME, username)
                 startActivity(intent)
             } else {
                 binding.firstScreenEdName.error = getString(R.string.empty_username)

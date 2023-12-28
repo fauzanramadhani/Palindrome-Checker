@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
+    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 }
 
 android {
@@ -27,6 +29,7 @@ android {
         }
     }
     buildFeatures {
+        buildConfig = true
         viewBinding = true
     }
     compileOptions {
@@ -50,4 +53,16 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.12.0")
     // Maker-men Rounded Image View
     implementation("com.makeramen:roundedimageview:2.3.0")
+    // Paging 3
+    implementation("androidx.paging:paging-runtime-ktx:3.1.0")
+    //Gson
+    implementation("com.google.code.gson:gson:2.8.9")
+    //Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    //Retrofit GSON Converter
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    //Recycle View swipe up refresh
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+    // Activity Utility
+    implementation("androidx.activity:activity-ktx:1.2.1")
 }

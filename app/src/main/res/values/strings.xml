@@ -21,4 +21,6 @@
     <string name="close">Close</string>
     <string name="empty_palindrome">Please input text to check</string>
     <string name="empty_username">Username cannot be empty</string>
+    <string name="please_wait">Please Wait…</string>
+    <string name="empty">Empty</string>
 </resources>
