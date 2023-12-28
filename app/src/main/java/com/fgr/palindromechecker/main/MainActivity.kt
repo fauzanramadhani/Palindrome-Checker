@@ -1,17 +1,18 @@
 package com.fgr.palindromechecker.main
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.fgr.palindromechecker.R
+import androidx.appcompat.app.AppCompatActivity
+import com.fgr.palindromechecker.databinding.ActivityMainBinding
 import com.fgr.palindromechecker.feature.first.FirstScreen
-import com.fgr.palindromechecker.feature.second.SecondScreen
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        startActivity(Intent(this, SecondScreen::class.java))
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        startActivity(Intent(this, FirstScreen::class.java))
         finish()
     }
 }

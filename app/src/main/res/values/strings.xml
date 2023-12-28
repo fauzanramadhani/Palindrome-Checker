@@ -8,4 +8,12 @@
     <string name="button_to_next">Button to Next</string>
     <string name="button_to_check">Button to Check</string>
     <string name="choose_a_user">Choose a User</string>
+    <string name="second_screen">Second Screen</string>
+    <string name="welcome">Welcome</string>
+    <string name="john_doe">John Doe</string>
+    <string name="selected_user_name">Selected User Name</string>
+    <string name="button_to_choose_a_user">Button to Choose a User</string>
+    <string name="third_screen">Third Screen</string>
+    <string name="firstname_lastname">Firstname Lastname</string>
+    <string name="example_email">email@email.com</string>
 </resources>
